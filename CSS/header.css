@@ -1,0 +1,39 @@
+hr { 
+    color: gray;
+}
+
+.headernavigation {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+}
+
+#navigation {
+    display: flex;
+    gap: 10px;
+}
+
+#navigation > a {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.headertitle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#subtitle {
+    color: rgba(128, 128, 128, 0.747);
+}

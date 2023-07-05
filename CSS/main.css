@@ -1,0 +1,60 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-right: 60px;
+    gap: 50px;
+}
+
+#toko {
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+#article {
+    flex-basis: 70%;
+    flex-grow: 0;
+    background-color: rgba(204, 208, 226, 0.37);
+}
+
+#article > h4 {
+    color: gray;
+    text-align: center;
+}
+
+#form {
+    flex-basis:30%;
+    flex-grow: 0;
+    background-color: rgba(204, 208, 226, 0.37);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+/* #MARK : Our Package */
+
+#titlepackage {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgba(204, 208, 226, 0.37);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+.ourpackage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    gap: 50px;
+}
+
+.ourpackage > div > h2 {
+    text-align: center;
+}
