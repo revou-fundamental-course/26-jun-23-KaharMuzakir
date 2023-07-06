@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="Js/formvalidation.js"></script>
 <style>
 body, h1, h2, h3, h4, h5, h6  {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -55,10 +56,10 @@ body, h1, h2, h3, h4, h5, h6  {
                 <h3>Contact Us</h3>
                 <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
                 <br>       
-                <form>
+                <form onsubmit="return false">
                     <div class="bodyform">
                         <label for="name"><b>Your Name :</b></label> <br>
-                        <input class="insert" id="name" type="text" placeholder="First and last name">
+                        <input class="insert" id="yourname" type="text" placeholder="First and last name">
                     </div>
                     <div class="bodyform">
                         <label for="email"><b>Email Address :</b></label> <br>
@@ -71,7 +72,7 @@ body, h1, h2, h3, h4, h5, h6  {
                     <div class="bodyform">
                         <label for="product"><b>What are you interested in?</b></label>
                         <br>
-                        <select class="insert">
+                        <select class="insert" id="option">
                             <option disabled selected>Select option</option>
                             <option>Fresh Vegetable</option>
                             <option>Fresh Fruit</option>
@@ -84,9 +85,9 @@ body, h1, h2, h3, h4, h5, h6  {
                     <div class="bodyform">
                         <label for="message"><b>Your Message</b></label>
                         <br>
-                        <textarea style="border: 1px; margin: 10px; height: 25px; width: 90%;" placeholder="Your Message"></textarea>
+                        <textarea id="message" style="border: 1px; margin: 10px; height: 25px; width: 90%;" placeholder="Your Message"></textarea>
                     </div>
-                    <input id="send" type="button" value="SEND">
+                    <button id="send" onclick="send();">SEND</button>
                 </form>
             </section>
         </section>
