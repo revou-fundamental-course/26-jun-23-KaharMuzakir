@@ -1,3 +1,15 @@
+p {
+    color: rgb(121,141,163);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(41,50,61);
+}
+
+a {
+    text-decoration: none;
+}
+
 .home {
     display: flex;
     flex-direction: row;
@@ -7,6 +19,7 @@
 }
 
 #toko {
+    margin: auto;
     height: 400px;
     width: 600px;
     border-radius: 5px;
@@ -15,23 +28,82 @@
 #article {
     flex-basis: 70%;
     flex-grow: 0;
-    background-color: rgba(204, 208, 226, 0.37);
+    /* background-color: rgba(204, 208, 226, 0.37); */
 }
 
 #article > h4 {
-    color: gray;
     text-align: center;
+    color: rgb(121,141,163);
 }
+
+.account {
+    margin-left: 20%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+#namaaccount {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-left: 20px;
+}
+
+#account-circle {
+    float: left;
+    height: 50px;
+}
+
+
+/* #article > a {
+    width: 30%;
+    height: 5px;
+    background-color:black;
+    margin: 10px 0;
+    margin: auto;
+} */
+
+/* #benefit {
+    background-color: rgb(121,141,163);
+    padding: 15px;
+    border-radius: 200%;
+    width: 30px;
+    height: 1%;
+    text-align: center;
+    margin-right: 40px;
+} */
 
 #form {
     flex-basis:30%;
     flex-grow: 0;
-    background-color: rgba(204, 208, 226, 0.37);
+    background-color: rgb(237,240,244);
     border-radius: 5px;
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: auto;
+    padding-bottom: 40px;
+}
 
+.bodyform {
+    padding-bottom: 10px;
+    padding-inline-start: 10px;
+}
+
+.insert{
+    border: 1px; 
+    margin: 10px; 
+    height: 25px; 
+    width: 90%;
+}
+
+#send {
+    border: 0px; 
+    margin: 10px 10px 10px 18px; 
+    height: 25px; 
+    width: 90%; 
+    background-color: rgb(41,50,61); 
+    color: white;
 }
 
 /* #MARK : Our Package */
@@ -40,19 +112,14 @@
     display: flex;
     text-align: center;
     flex-direction: column;
-    background-color: rgba(204, 208, 226, 0.37);
+    background-color: rgb(237,240,244);
     padding-top: 50px;
     padding-bottom: 50px;
     }
 
 .ourpackage {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 60px;
-    gap: 50px;
+        column-count: 3;
+        column-gap: 20px;
 }
 
 .ourpackage > div > h2 {

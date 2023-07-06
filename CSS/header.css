@@ -17,7 +17,9 @@ hr {
 
 #navigation {
     display: flex;
-    gap: 10px;
+    flex-direction: row;
+    gap: 5px;
+
 }
 
 #navigation > a {
@@ -26,6 +28,8 @@ hr {
     text-align: center;
     border: 1px solid;
     border-radius: 4px;
+    background-color: rgb(41,50,61);
+    color: white;
 }
 
 .headertitle {
@@ -36,4 +40,5 @@ hr {
 
 #subtitle {
     color: rgba(128, 128, 128, 0.747);
+    margin-bottom: 50px;
 }

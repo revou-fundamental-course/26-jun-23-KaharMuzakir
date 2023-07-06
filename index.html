@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/header.css">    
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body, h1, h2, h3, h4, h5, h6  {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+</style>
     <title>E-Groceries</title>
 </head>
 <body>
@@ -28,78 +35,111 @@
             <article id="article">
                 <img src="Assets/Toko.JPG" id="toko">
                 <h4><i>"setiap hari beli sayur buah yang fres disini"</i></h4>
-                <a>Florence Haughes</a><br>
-                <a><i>Ibu Rumah Tangga, 28</i></a>
+                <div class="account">
+                    <img src="Assets/account-circle.svg" id="account-circle">              
+                    <h5 id="namaaccount">Florence Haughes</h5>
+                    <p id="namaaccount"><i>Ibu Rumah Tangga, 28</i></p>
+                </div>
+                <a id="grid-line">
                 <p>Dengan adanya dapur impian ini, kalian akan mendapatkan berbagai benefit seperti :</p>
                 <ol type="1">
-                    <li>Gudang berbagai macam keperluan</li>
+                    <li id="benefit">Gudang berbagai macam keperluan</li>
                     <p>Menyedikan berbagai macam keperluan alat dan bahan dapur sesuai kebutuhan. Jangan ragukan kesegaran yang disajikan, karena semua produk sesuai standar yang mengutamakan kepuasan konsumen.</p>
-                    <li>Siap antar dengan instan delivery</li>
+                    <li id="benefit">Siap antar dengan instan delivery</li>
                     <p>Jangan takut kehabisan waktu untuk mengantre pembayaran. Pilih dan masukkan keranjang setiap pembelian, maka kurir akan menghantarkan pesanan dengan proteksi keamanan hingga ke alamat pemesanan.</p>
-                    <li>Sedia paket pintas, andalan masak cerdas</li>
+                    <li id="benefit">Sedia paket pintas, andalan masak cerdas</li>
                     <p>Ingin memasak, tapi belum menemukan menu yang sesuai? Jangan khawatir, bunding set telah disediakan untuk kamu yang masih bingung dalam menentukan menu. Scroll dan geser setiap paket yang disediakan untuk pilihan menu yang akan kamu sajikan!</p>
                 </ol>
             </article>
             <section id="form">
                 <h3>Contact Us</h3>
-                <h6>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</h6>            
-                <form action="" method="post">
-                    <label for="name"><b>Your Name :</b></label>
-                    <br>
-                    <input id="name" type="text" value="First and last name">
-                    <br>
-                    <label for="email"><b>Email Address :</b></label>
-                    <br>
-                    <input id="email" type="email" value="example@email.com">
-                    <br>
-                    <label for="product"><b>What are you interested in?</b></label>
-                    <br>
-                    <select>
-                        <option>Select option</option>
-                        <option>Fresh Vegetable</option>
-                        <option>Fresh Fruit</option>
-                        <option>Instant Delivery</option>
-                        <option>Kitchen Ingredient</option>
-                        <option>Kitchen Set</option>
-                        <option>Bunding Set</option>
-                    </select>
-                    <br>
-                    <input type="button" value="SEND">
+                <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                <br>       
+                <form>
+                    <div class="bodyform">
+                        <label for="name"><b>Your Name :</b></label> <br>
+                        <input class="insert" id="name" type="text" placeholder="First and last name">
+                    </div>
+                    <div class="bodyform">
+                        <label for="email"><b>Email Address :</b></label> <br>
+                        <input class="insert" id="email" type="email" placeholder="example@email.com">
+                    </div>
+                    <div class="bodyform">
+                        <label for="number"><b>Phone Number :</b></label> <br>
+                        <input class="insert" id="number" type="number" placeholder="Your phone number">
+                    </div>
+                    <div class="bodyform">
+                        <label for="product"><b>What are you interested in?</b></label>
+                        <br>
+                        <select class="insert">
+                            <option disabled selected>Select option</option>
+                            <option>Fresh Vegetable</option>
+                            <option>Fresh Fruit</option>
+                            <option>Instant Delivery</option>
+                            <option>Kitchen Ingredient</option>
+                            <option>Kitchen Set</option>
+                            <option>Bunding Set</option>
+                        </select>
+                    </div>
+                    <div class="bodyform">
+                        <label for="message"><b>Your Message</b></label>
+                        <br>
+                        <textarea style="border: 1px; margin: 10px; height: 25px; width: 90%;" placeholder="Your Message"></textarea>
+                    </div>
+                    <input id="send" type="button" value="SEND">
                 </form>
             </section>
         </section>
         <h1 id="titlepackage">Our Package</h1>
         <section class="ourpackage">
-            <div>
-                <h2>Fresh Vegetable</h2>
+            <span>
+                <h3>Fresh Vegetable</h3>
                 <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
-            </div>
-            <div>
-                <h2>Fresh Fruit</h2>
+            </span>
+            <span>
+                <h3>Fresh Fruit</h3>
                 <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
-            </div>
-            <div>
-                <h2>Instant Delivery</h2>
+            </span>
+            <span>
+                <h3>Instant Delivery</h3>
                 <p>Di kirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
-            </div>
-            <div>
-                <h2>Kitchen Ingredient</h2>
+            </span>
+            <a id="grid-line">
+            <span>
+                <h3>Kitchen Ingredient</h3>
                 <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
-            </div>
-            <div>
-                <h2>Kitchen Set</h2>
+            </span>
+            <span>
+                <h3>Kitchen Set</h3>
                 <p>Segala jenis alat masak untuk membantu kamu dalam memasak</p>
-            </div>
-            <div>
-                <h2>Bunding Set</h2>
+            </span>
+            <span>
+                <h3>Bunding Set</h3>
                 <p>Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur kamu</p>
-            </div>
+            </span>
         </section>
     </main>
     <hr>
     <footer>
-        
-
+        <section class="footertitle">
+            <h2>Jangan ragu untuk mengarungi Dream Kitchen! Setiap kebutuhan yang kamu perlukan, akan kami sediakan!</h2>
+            <p id="subtitle" style="margin-left: 10%; margin-right: 10%;">
+                Suspendisse egestas rhoncus urna in bibendum. 
+                Donec urna neque, euismod sed justo quis, convallis tincidunt risus. Phasellus fringilla odio vel erat flingilla,
+            </p>
+        </section>
+        <div>
+            <a href="" id="calltoaction">CALL TO ACTION</a>
+        </div>
+        <hr>
+        <section class="ending">
+            <img src="Assets/Logo Revou.webp" id="logo">
+            <div id="inending">
+                <a>Terms of Service</a>
+                <a>Privacy Policy</a>
+            </div>
+            <p>© 2019 Revou</p>
+        </section>
     </footer>
 </body>
 </html>
